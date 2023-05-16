@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100&family=Poppins:wght@200&family=Roboto+Mono:wght@200&family=Roboto:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: rgb(201, 184, 184);
+  font-family: "Noto Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 3px;
+}
+h1 {
+    font-weight: bold;
+  color: rgb(2, 112, 112);
+  text-align: center;
+  margin: 60px 0px 15px 0px;
+}
+.calculator {
+  margin: auto;
+  background-color: rgb(51, 105, 105);
+  max-width: 90%;
+  width: 400px;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  gap: 5px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 1px 1px 15px wheat;
+}
+#display {
+  box-sizing: border-box;
+  padding: 15px;
+  font-size: 2rem;
+  text-align: right;
+  border: 2px solid rgb(7, 136, 143);
+  width: 89.5%;
+  height: 17%;
+  overflow: hidden;
+  outline: 0px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 8px rgb(45, 207, 164);
+}
+.keys {
+  width: 90%;
+  height: 75%;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 2px;
+  overflow: hidden;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.keys-value {
+  border: 2px solid rgb(32, 93, 75);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.5s linear;
+}
+.keys-value:active {
+  scale: 1.03;
+}
+.num-keys {
+  background-color: rgb(98, 136, 173);
+}
+.func-keys {
+  background-color: rgb(6, 182, 165);
+}
+#equal-key {
+  background-color: rgb(246, 111, 15);
+  grid-area: 3/4/6/5;
+}
+.arith-keys {
+  background-color: rgb(205, 46, 160);
+}
